@@ -1,13 +1,11 @@
-package com.yourself.moviesfanbook.ui.rv;
+package com.bridge.androidtechnicaltest.ui.rv;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-
 /*
 Reference:-
 https://github.com/codepath/android_guides/wiki/Endless-Scrolling-with-AdapterViews-and-RecyclerView
- */
+*/
 
 public abstract class EndlessRecyclerViewScrollListener extends RecyclerView.OnScrollListener {
     // The minimum amount of items to have below your current scroll position

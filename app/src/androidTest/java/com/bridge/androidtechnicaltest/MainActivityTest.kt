@@ -1,17 +1,16 @@
 package com.bridge.androidtechnicaltest
 
-import android.support.test.espresso.Espresso
-import android.support.test.espresso.assertion.ViewAssertions
-import android.support.test.espresso.matcher.ViewMatchers
-import android.support.test.rule.ActivityTestRule
-import android.support.test.runner.AndroidJUnit4
-import com.dict.demo.R
+import androidx.test.espresso.Espresso
+import androidx.test.espresso.assertion.ViewAssertions
+import androidx.test.espresso.matcher.ViewMatchers
+import androidx.test.rule.ActivityTestRule
+import androidx.test.runner.AndroidJUnit4
+import com.bridge.androidtechnicaltest.ui.MainActivity
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
-
 class MainActivityTest {
 
     @get:Rule

@@ -7,5 +7,7 @@ object Constant {
     const val PLOT = "full"
     const val MOVIES_PER_PAGE = 10 // constant from Api
 
+    const val MAX_RETRY_LIMIT = 10
+
 
 }

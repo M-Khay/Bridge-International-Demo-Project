@@ -3,9 +3,13 @@
 
     <string name="pupil_detail_id">Id</string>
     <string name="pupil_detail_name">Name</string>
+    <string name="pupil_detail_name_error">Name cannot be empty</string>
     <string name="pupil_detail_country">Country</string>
+    <string name="pupil_detail_country_error">Country cannot be empty.</string>
     <string name="sync">Sync</string>
+    <string name="save">SAVE</string>
 
     <string name="data_reset">Api Data Reset</string>
     <string name="data_reset_failed">Data Reset Failed</string>
+
 </resources>

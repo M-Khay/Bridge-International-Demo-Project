@@ -1,7 +1,10 @@
-package com.bridge.androidtechnicaltest.db
+package com.bridge.androidtechnicaltest.network
 
 import androidx.lifecycle.LiveData
-import com.bridge.androidtechnicaltest.network.PupilApi
+import com.bridge.androidtechnicaltest.db.AppDatabase
+import com.bridge.androidtechnicaltest.db.NewPupil
+import com.bridge.androidtechnicaltest.db.Pupil
+import com.bridge.androidtechnicaltest.db.PupilList
 import com.yourself.searchyourcityweather.utils.NetworkConnectivity
 
 
@@ -22,21 +25,32 @@ class PupilRepositoryImpl(val database: AppDatabase, val pupilApi: PupilApi) : P
         return result
     }
 
-    override suspend fun addNewPupil(newPupil: NewPupil) {
+    override fun getLastFetchedPupils(): LiveData<List<Pupil>> {
+        return database.pupilDao.getPupils()
+    }
+
+    override suspend fun addNewPupil(newPupil: NewPupil): Pupil? {
+        var result: Pupil? = null
         if (NetworkConnectivity.isNetworkConnected) {
-            pupilApi.AddPupil("application/json", newPupil)
+            result = pupilApi.AddPupil("application/json", newPupil)
         } else {
             database.pupilDao.insertNewPupil(newPupil)
         }
+        return result
     }
+
+    override suspend fun syncNewPupil(newPupil: NewPupil): Pupil? {
+        return pupilApi.AddPupil("application/json", newPupil)
+    }
+
 
     override suspend fun getNewPupilList(): List<NewPupil> {
-        TODO("Not yet implemented")
+        return database.pupilDao.getNewPupilsList()
     }
 
 
-    override fun getLastFetchedPupils(): LiveData<List<Pupil>> {
-        return database.pupilDao.getPupils()
+    override suspend fun removeNewPupil(newPupil: NewPupil) {
+        database.pupilDao.removeNewPupil(newPupil)
     }
 
 
