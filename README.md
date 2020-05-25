@@ -1,4 +1,4 @@
-# Movies-Fanbook
+# Bridge-International-Demo-Project
 Simple Android app with inifinite scrolling and built using Material Design, MVVM, Coroutines and Android Architecture Components. 
 
 This is a simple application for fetching and displaying pupil list, and it load data in chunks (5 pupil with each api call) and has infite scrolling feature as well as offline data feature. You can also add new pupil (works both online /offline ) if you added any Pupil in offline mode come back to the app later when you have internet and press the sync from options menu.
