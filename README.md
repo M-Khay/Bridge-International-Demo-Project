@@ -7,6 +7,8 @@ The app works in both offline and online more. But due to limited time constrain
 
 Also you can add new pupil in offline mode, and later when you have network press the sync button in options menu( top right corner of screen) to sync the new pupil you added earlier. 
 
+** Most of the images are failing to load due to ConnectException. The images at the URL seems to be not working well, it would automatically get fixed on the app once we fix our backend server
+
 # App Details :
 This is a simple application for fetching and displaying pupil list, and it load data in chunks (5 pupil with each api call) and has infite scrolling feature as well as offline data feature. You can also add new pupil (works both online /offline ) if you added any Pupil in offline mode come back to the app later when you have internet and press the sync from options menu.
 
