@@ -1,6 +1,13 @@
 # Bridge-International-Demo-Project
 Simple Android app with inifinite scrolling and built using Material Design, MVVM, Coroutines and Android Architecture Components. 
 
+# How to use the app :
+
+The app works in both offline and online more. But due to limited time constraint there might be cases when you are using the app in offline mode and you suddenly comes online, then you have to exit/kill the app and come back to it to load new data.
+
+Also you can add new pupil in offline mode, and later when you have network press the sync button in options menu( top right corner of screen) to sync the new pupil you added earlier. 
+
+# App Details :
 This is a simple application for fetching and displaying pupil list, and it load data in chunks (5 pupil with each api call) and has infite scrolling feature as well as offline data feature. You can also add new pupil (works both online /offline ) if you added any Pupil in offline mode come back to the app later when you have internet and press the sync from options menu.
 
 There are simple test cases written for 
@@ -39,9 +46,6 @@ UI  :: https://material.io/
 
 ![Add New Pupil Error](/images/addnewpupilerror.jpeg)
 
-# How to use the app :
-
-The app works in both offline and online more. But due to limited time constraint there might be cases when you are using the app in offline mode and you suddenly comes online, then you have to exit the app and come back to it to load new data. 
 
 # Future Goals : 
 While this is just the MVP of the actual prodcut, given more time there are few advances which this app would need to give its users a flawless and memorable experience. 
