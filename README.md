@@ -33,11 +33,11 @@ UI  :: https://material.io/
 
 # LightMode : 
 
-![Pupil List Screen](/images/pupillist.jpg)
+![Pupil List Screen](/images/pupillist.jpeg)
 
-![Add New Pupil](/images/addnewpupil.jpg)
+![Add New Pupil](/images/addnewpupil.jpeg)
 
-![Add New Pupil Error](/images/addnewpupilerror.jpg)
+![Add New Pupil Error](/images/addnewpupilerror.jpeg)
 
 # How to use the app :
 
